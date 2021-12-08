@@ -7,11 +7,11 @@
     <title>Car Rental</title>
 </head>
 <body>
-<h1>You have successfully logged in</h1>
 
 <div>
 	<a href="display_car_form.php"><input type="button" id="btn1"  value="Rent a Car"></a>
-	<a href="login.php"><input type="button" id="btn1" onclick="addA.php" value="Logout"></a>
+    <a href="profile.php"><input type="button" id="btn1" value="Profile"></a>
+	<a href="login.php"><input type="button" id="btn1" value="Logout"></a>
 </div>
 
 <?php
