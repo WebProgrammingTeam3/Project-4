@@ -37,7 +37,7 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT itemid, name, ctype, color, quantity FROM Item WHERE itemid<=10";
+$sql = "SELECT itemid, name, ctype, color, quantity FROM Items WHERE itemid<=10";
 $result = $conn->query($sql);
 echo "<h3>Rental Cars</h3>";
 if ($result->num_rows > 0) {
@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
      echo "0 results";
 }
 
-$sql = "SELECT itemid, snum FROM Item WHERE itemid>=11";
+$sql = "SELECT itemid, snum FROM Items WHERE itemid>=11";
 $result = $conn->query($sql);
 echo "<h3>Parking Spaces</h3>";
 if ($result->num_rows > 0) {
