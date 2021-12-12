@@ -82,7 +82,7 @@ $conn->close();
 
 	<div>
 	<a href="displayTable.php"><input type="button" id="btn1" value="Back To Inventory"></a>
-	<a href="addAlbum.php"><input type="button" id="btn1" value="Checkout"></a>
+	<a href="checkout.php"><input type="button" id="btn1" value="Checkout"></a>
 	<a href="login.php"><input type="button" id="btn1" onclick="addA.php" value="Logout"></a>
 	</div>
 </body>
