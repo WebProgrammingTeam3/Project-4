@@ -1,0 +1,193 @@
+html {
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background-color: lightgrey;
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	font-family: Arial Rounded MT Bold;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:hover {
+	color: #46FF00;
+}
+
+a.inline {
+	text-decoration: none;
+	color: black;
+}
+
+a.inline:visited {
+	color: black;
+}
+
+a.inline:hover {
+	color: #46FF00;
+}
+
+.head {
+	background-color: #000058;
+	font-size: 115%;
+	font-family: monaco;
+	color: white;
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 1cm;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	padding: 0cm;
+	border: 2px solid #00003f;
+	z-index: 1;
+	border-radius: 5px;
+}
+
+#banner{
+	float: left;
+	position: absolute;
+	top: -25px;
+	left: 10px;
+	background: linear-gradient(to right, hsl(204 100% 62%), hsl(104 100% 59%));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: bold;
+	font-family: arial black;
+}
+
+input[type=submit]{
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+input[type=submit]:hover{
+	padding: 5px 15px;
+	background: #fff;
+	border: 1px black solid;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+input[type=button]{
+	padding: 5px 15px;
+	background: #ccc;
+	border: 0 none;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+input[type=button]:hover{
+	padding: 5px 15px;
+	background: #fff;
+	border: 1px black solid;
+	cursor: pointer;
+	border-radius: 5px;
+
+}
+
+select {
+	width: 100px;
+	font-size: 15px;
+	border: 1px solid #ccc;
+	height: 35px;
+}
+
+#assignment {
+	font-size: 5px;
+	color: red;
+}
+
+#mainBody {
+	position: relative;
+	top: 35px;
+	border: solid 4px #B2BECE;
+	background-color: #E3F9FF;
+	height: 89%;
+	width: 45%;
+	padding-top: 2cm;
+	border-radius: 5px;
+	float: right;
+	text-align: center;
+}
+
+.timef {
+	border: 1px solid black;
+	width: 115px;
+	height: auto;
+	font-size: 80%;
+}
+
+#mainPrepay {
+	background-color: #E3F9FF;
+	border: solid 10px black;
+	border-radius: 5px;
+	height: 87%;
+	width: 46%;
+	padding-top: 2cm;
+	font-size: 120%;
+	text-align: center;
+}
+
+#formsect {
+	position: absolute;
+	top:2cm;
+	border: solid 4px #B2BECE;
+	background-color: #E3F9FF;
+	height: 89%;
+	width: 45%;
+	padding-top: 2cm;
+	border-radius: 5px;
+	float: left;
+	padding-left: 1cm;
+	font-size: 140%;
+}
+
+table {
+	border: solid 1px black;
+	border-spacing: 0;
+	padding: 0;
+}
+
+th, td, tr {
+	border: solid 2px black;
+	width: 5cm;
+	font-size: 85%;
+	text-align: center;
+	padding: 0;
+	border-spacing: 0;
+}
+
+tr:nth-child(even) {
+	background-color: lightgrey;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
+}
+
+
+
+

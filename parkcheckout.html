@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkout</title>
+	<script type="text/JavaScript" src="ccValid.js"></script>
+	<link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+
+	<div class="head"> <p><h2 id="banner">Parking Kiosk</h2><a href="login.php">Rental Cars</a>	| <a href="parkingkiosk.php">Reserve Parking</a></p>
+</div>
+
+	<div id="checkoutBox">
+		<h3>Credit Card Checkout</h3>
+		<br>
+
+		<form name="A3Form" id="A3Form" onsubmit="return formValidation()" action="parkcheckout.php" method="post" >
+		
+<!--Card Num-->
+<div id="cardNum">
+			<div class="error" id="cardError"></div>
+			<label>Card Number: </label>
+			<input onclick="checkType()" id="cardNum" name="card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="off" maxlength="19" minlength="16" placeholder="xxxx xxxx xxxx xxxx">
+
+		</div>
+
+
+<!--Name -->
+<br>
+		<div id="name">
+			<div class="error" id="nameError"></div>
+			<label>Name on Card: </label>
+			<input type="text" name="name">
+		</div>
+
+		
+		<!--Expiration -->
+		<br>
+
+		<div id="expiration">
+			Expiration Date:
+			<select name="month" id="month">
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			<select name="year" id="year">
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+			</select>
+
+		</div>
+
+
+		<br>
+
+		<div id="cvv">
+
+			<div class="error" id="cvvError"></div>
+			<label>CVV/CVC: </label>
+			<input id="cvv" name="cvv" class="cvv" type="password" inputmode="numeric" autocomplete="off" maxlength="3" placeholder="XXX">
+
+		</div>
+
+		<br>
+		<a href="parkcheckout.php"><input type="submit" name="submit" value="Checkout"></a>
+		<a href="parkingkiosk.php"><input type="button" id="cancel" value="Cancel Transaction"></a>
+	</form>
+
+	<div id="ccType">
+		 
+	</div>
+
+	</div>
+
+</body>
+</html>
