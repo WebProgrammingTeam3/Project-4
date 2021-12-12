@@ -26,6 +26,19 @@
 <body>
 
 <?php
+	
+$host = "localhost";
+$port = 3306;
+$username = "rsalter2";
+$password = "rsalter2";
+$dbname = "rsalter2";
+
+// Create connection
+$conn = new mysqli($host, $port, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
 $sql = "SELECT artist, name, genre, rdate FROM albums";
 $result = $conn->query($sql);
@@ -43,7 +56,7 @@ if ($result->num_rows > 0) {
 } else {
      echo "0 results";
 }
-
+ $conn->close();
 
 ?>
 
