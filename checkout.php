@@ -196,7 +196,7 @@ $ccdate = $_POST['exp'];
 $cccode = $_POST['securitycode'];
 
 // database insert SQL code
-$sql = "INSERT INTO `Users` (`ccN`, `exp`, `securitycode`) VALUES ('0', '$ccnum', '$ccdate', '$cccode')";
+$sql = "INSERT INTO Users (ccnum, ccdate, cccode) VALUES ('$ccnum', '$ccdate', '$cccode')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
