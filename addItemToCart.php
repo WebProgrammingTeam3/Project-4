@@ -35,7 +35,7 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
-	<a href="displayTable.php"><input type="button" id="btn1" value="OK"></a>
+	<a href="displayCart.php"><input type="button" id="btn1" value="OK"></a>
 	</div>
 </body>
 
