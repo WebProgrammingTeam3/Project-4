@@ -37,37 +37,38 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT name, ctype, color, quantity FROM Item WHERE itemid<=10";
+$sql = "SELECT itemid, name, ctype, color, quantity FROM Item WHERE itemid<=10";
 $result = $conn->query($sql);
 echo "<h3>Rental Cars</h3>";
 if ($result->num_rows > 0) {
      // output data of each row
-	echo "<table><tr><th>Name</th><th>Type</th><th>color</th><th>Quantity</th></tr>";
+	echo "<table><tr><th>Car ID</th><th>Name</th><th>Type</th><th>color</th><th>Quantity</th></tr>";
      while($row = $result->fetch_assoc()) {
+	     	 $itemid=$row["itemid"];
 		 $name=$row["name"];
 		 $ctype=$row["ctype"];
 		 $color=$row["color"];
 		 $quantity=$row["quantity"];
 
 
-         echo "<tr><td>".$name."</td><td>".$ctype."</td><td>".$color."</td><td>".$quantity."</td></tr>";
+         echo "<tr><td>".$itemid."</td><td>".$name."</td><td>".$ctype."</td><td>".$color."</td><td>".$quantity."</td></tr>";
      }
 	 echo "</table>";
 } else {
      echo "0 results";
 }
 
-$sql = "SELECT name, snum FROM Item WHERE itemid>=11";
+$sql = "SELECT itemid, snum FROM Item WHERE itemid>=11";
 $result = $conn->query($sql);
 echo "<h3>Parking Spaces</h3>";
 if ($result->num_rows > 0) {
      // output data of each row
-	echo "<table><tr><th>Spaces</th></tr>";
+	echo "<table><tr><th>Space ID</th><th>Space Number</th></tr>";
      while($row = $result->fetch_assoc()) {
 
-		 $name=$row["name"];
+		 $itemid=$row["itemid"];
 		 $snum=$row["snum"];
-         echo "<tr><td>".$name."</td></tr><tr><td>".$snum."</td></tr>";
+         echo "<tr><td>".$itemid."</td><td>".$snum."</td></tr>";
      }
 	 echo "</table>";
 } else {
@@ -79,9 +80,12 @@ $conn->close();
 ?>  
 
 	<div>
-	<a href="addArtist.php"><input type="button" id="btn1" value="Add new Artist"></a>
-	<a href="addAlbum.php"><input type="button" id="btn1" value="Add new Album"></a>
-	<a href="login.php"><input type="button" id="btn1" onclick="addA.php" value="Logout"></a>
+		<form action="addItemToCart.php" method="post">
+		<h3>Insert the Space or Car ID you would like to purchase into the box below:</h3>
+		<p>Artist: <input name="artist1" type="text"></p>
+		<input type="submit" id="btn3" value="Submit">
+		<a href="displayTable.php"><input type="button" id="btn1"  value="Cancel"></a>
+		<a href="displayCart.php"><input type="button" id="btn1"  value="Your Cart"></a>
 	</div>
 </body>
 
