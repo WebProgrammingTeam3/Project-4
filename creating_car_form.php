@@ -17,9 +17,9 @@
 <?php
 $host = "localhost";
 $port = 3306;
-$username = "";
-$password = "";
-$dbname = "";
+$username = "rsalter2";
+$password = "rsalter2";
+$dbname = "rsalter2";
 
 // Create connection
 $conn = new mysqli($host, $port, $username, $password, $dbname);
