@@ -68,8 +68,8 @@ if ($result->num_rows > 0) {
 
 
      	 $itemid=$row["itemid"];
-		 $snum=$row["snum"];
-         echo "<tr><td>".$itemid."</td></tr><tr><td>".$snum."</td></tr>";
+	 $snum=$row["snum"];
+         echo "<tr><td>".$itemid."</td><td>".$snum."</td></tr>";
      }
 	 echo "</table>";
 } else {
