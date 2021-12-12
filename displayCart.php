@@ -37,7 +37,7 @@ if ($conn->connect_error) {
      die("Connection failed: " . $conn->connect_error);
 } 
 
-$sql = "SELECT Cart.itemid,Item.name,Item.ctype,Item.color,Item.quantity FROM Cart INNER JOIN Item ON Cart.itemid = Item.itemid WHERE Cart.itemid = Item.itemid AND Item.itemid<=10";
+$sql = "SELECT Cart.itemid,Items.name,Items.ctype,Items.color,Items.quantity FROM Cart INNER JOIN Items ON Cart.itemid = Items.itemid WHERE Cart.itemid = Items.itemid AND Items.itemid<=10";
 $result = $conn->query($sql);
 echo "<h3>Your Rentals</h3>";
 if ($result->num_rows > 0) {
@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
      echo "0 results";
 }
 
-$sql = "SELECT Cart.itemid, Item.name, Item.snum FROM Cart INNER JOIN Item ON Cart.itemid = Item.itemid WHERE Cart.itemid = Item.itemid AND Item.itemid>=11";
+$sql = "SELECT Cart.itemid, Items.name, Items.snum FROM Cart INNER JOIN Items ON Cart.itemid = Items.itemid WHERE Cart.itemid = Items.itemid AND Items.itemid>=11";
 $result = $conn->query($sql);
 echo "<h3>Parking Spaces</h3>";
 if ($result->num_rows > 0) {
