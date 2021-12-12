@@ -4,7 +4,7 @@
 
 <head lang="en">
 	<meta charset="UTF-8">
-	<title>Adding Artist to DB</title>
+	<title>Adding Item To Cart</title>
 </head>
 
 <body>
