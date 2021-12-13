@@ -61,7 +61,7 @@ if ($result->num_rows > 0) {
 } else {
      echo "0 results";
 }
-
+/* backup prepay parking services section
 $sql = "SELECT itemid, snum FROM Items WHERE itemid>=11";
 $result = $conn->query($sql);
 echo "<h3>Parking Spaces</h3>";
@@ -78,7 +78,7 @@ if ($result->num_rows > 0) {
 } else {
      echo "0 results";
 }
-
+*/
 
 $conn->close();
 ?>  
