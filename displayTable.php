@@ -85,7 +85,7 @@ $conn->close();
 
 	<div>
 		<form action="addItemToCart.php" method="post">
-		<h3>Insert the Space or Car ID you would like to purchase into the box below:</h3>
+		<h3>Insert the Car ID you would like to purchase into the box below:</h3>
 		<p>Selection: <input name="artist1" type="text"></p>
 		<input type="submit" id="btn3" value="Submit">
 		<a href="displayTable.php"><input type="button" id="btn1"  value="Cancel"></a>
