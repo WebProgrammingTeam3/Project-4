@@ -30,7 +30,7 @@
   		Not yet a member? <a href="register.php">Sign up</a>
   	</p>
 	<p>
-		<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button>Youtube Link</button></a>
+		<a href="https://youtu.be/D8bL78LfREU"><button>Youtube Link</button></a>
 	  </p>
 	  <p>
 		  <a href="https://github.com/WebProgrammingTeam3/Project-4"><button>Github Link</button></a>
