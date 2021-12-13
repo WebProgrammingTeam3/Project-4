@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {
 } else {
      echo "0 results";
 }
-
+/* backup parking services system
 $sql = "SELECT Cart.itemid, Items.name, Items.snum FROM Cart INNER JOIN Items ON Cart.itemid = Items.itemid WHERE Cart.itemid = Items.itemid AND Items.itemid>=11";
 $result = $conn->query($sql);
 echo "<h3>Parking Spaces</h3>";
@@ -75,7 +75,7 @@ if ($result->num_rows > 0) {
 } else {
      echo "0 results";
 }
-
+*/
 
 $conn->close();
 ?>  
