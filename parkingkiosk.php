@@ -14,7 +14,7 @@
 <div id="mainPrepay">
 	<h1>Welcome to the Pre-Paid Parking Kiosk</h1><br>	<p>Book the best Atlanta parking near all of your favorite destinations with the help of our Kiosk</p>
 	<p>With so many sights to see, you won't waste a minute searching for parking, with our great rates and availability offered throughout the city.</p><br>
-	<p>Need to Book a Rental Car?<br>We recommend: <a href="login.php" class="inline">Car Rental</a></p>
+	<p>Need to Book a Rental Car?<br>We recommend: <a href="login.php" class="inline"><button>Car Rental</button></a></p>
 	<a href="parkingform.php"><input type="button" id="button" value="Reserve Your Space"></a>
 
 <?php
