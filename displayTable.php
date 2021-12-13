@@ -23,6 +23,10 @@ tr:nth-child(1){font-weight: bold;}
 </head>
 
 <body>
+	
+	  <p>
+		  Click here to go to our Pre-Pay Parking Services Website: <a href="parkingkiosk.php"><button>Pre-Pay Parking Services</button></a>
+	</p>
 
 <?php
 $servername = "localhost";
